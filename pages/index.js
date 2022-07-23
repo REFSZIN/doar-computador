@@ -8,7 +8,7 @@ export default function Home() {
   const [data, setData] = useState('')
 
   useEffect(() => {
-    axios.get('http://doar-computador-api.herokuapp.com/')
+    axios.get('https://doar-computador-api.herokuapp.com/')
     .then((result)  => {
       setData(result.data.alive);
     }).catch((err) => {
