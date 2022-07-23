@@ -37,6 +37,7 @@
   min-width: 200px;
   color: #0070f3;
   text-decoration: none;
+  font-family: 'Playball', cursive;
 }
 
 .title a h1:hover,
@@ -49,6 +50,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-size: 100px;
 }
 
 .title,
@@ -116,11 +118,26 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+  
 }
 
+@media (max-width: 900px) {
+  .title{
+    font-size: 48px;
+    flex-direction: column;
+  }
+  .titleinfo {
+    font-size: 45px;
+    flex-direction: column;
+  }
+}
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .title, .titleinfo {
+    font-size: 35px;
+    flex-direction: column;
+  }
+  .titleinfo {
+    font-size: 35px;
     flex-direction: column;
   }
 }
