@@ -1,23 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&family=Playball&display=swap');
 
 /* 	
-	font-family: 'Lexend Deca', sans-serif;
-	font-family: 'Playball', cursive;
     font-family: 'Righteous', cursive;
 	font-family: 'Roboto', sans-serif; 
     font-family: 'Recursive', sans-serif;
-	mobileS: '320px',
-	mobileM: '375px',
-	mobileL: '425px',
-	tablet: '768px',
-	laptop: '1024px',
-	laptopL: '1440px',
-	desktop: '2560px'
 */
-
 *, *:before, *::after{
     box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -25,9 +14,8 @@
 	word-break: break-all;
 }
 a{
-    text-decoration: none;
+    text-decoration: under;
 }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,9 +39,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+body,html {
+	display: flex;
+	margin:0px;
+	background-color: black;
+	} 
 ol, ul {
 	list-style: none;
 }
@@ -69,38 +59,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html,
-body {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url("../public/1.gif");
-  background-repeat: round;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+button:hover{
+	cursor: pointer;
+    filter: brightness(1.1);
+    box-shadow: 1px 1px 2px 2px #aaaaaa;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-  color: white;
-}
-
-p{
-    margin-top: 60px;
-    font-family: 'Righteous', cursive;
-    font-size: 120px;
-}
-* { 
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-  }
+#__next{
+	width: 100vw;
+	height: 100vh;
 }
