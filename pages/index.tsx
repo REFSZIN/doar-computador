@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import styles from '../styles/Index.module.css';
 
 const Home: NextPage = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState(false);
 
   useEffect(() => {
     axios.get('https://doar-computador-api.herokuapp.com/')
@@ -18,21 +18,21 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-      <>
+      <div>
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>⚡Doação de Computadores⚡</title>
         </Head>
-          <main className={styles.main}>
+          <main className={styles.meio}>
             <p>{data}</p>
-            <Header></Header>
+            <Header data={data}></Header>
             <main>
               <section></section>
               <aside></aside>
             </main>
             <footer></footer>
           </main>
-      </>
+      </div>
     )
 };
 export default Home

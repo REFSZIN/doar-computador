@@ -2,12 +2,16 @@
 import React from "react";
 import styles from '../styles/Header.module.css';
 
-export default function Header(){
+interface server {
+    data: Boolean
+}
+
+export default function Header(props: server){
     return (
         <header className={styles.header}>
             <nav>
                 <h1>DOAR COMPUTADORES</h1>
-                <span></span>
+                <span>API {props.data ? "On" : "Off"}</span>
             </nav>
         </header>
     )
