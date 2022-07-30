@@ -3,7 +3,7 @@ import Head from 'next/head';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Header from "../components/Header";
-import styles from '../styles/Index.module.css';
+import { Conteiner } from '../styles/Index.module';
 
 const Home: NextPage = () => {
   const [data, setData] = useState(false);
@@ -23,15 +23,14 @@ const Home: NextPage = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>⚡Doação de Computadores⚡</title>
         </Head>
-          <main className={styles.meio}>
-            <p>{data}</p>
+          <Conteiner>
             <Header data={data}></Header>
             <main>
               <section></section>
               <aside></aside>
             </main>
             <footer></footer>
-          </main>
+          </Conteiner>
       </div>
     )
 };

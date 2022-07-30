@@ -27,6 +27,14 @@ export const Logo = styled.img `
     width: 60px;
     height: 50px;
 `;
+export const Conteiner = styled.header`
+	background-color: red;
+	width: 100%;
+	height: 70px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+`;
 export const BackPage = styled.img`
     width: 40px;
     height: 40px;
