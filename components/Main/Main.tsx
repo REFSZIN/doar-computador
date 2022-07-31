@@ -1,15 +1,22 @@
 
-import React from "react";
-import { Formulario, Conteiner,FormComputadores,FormUser} from './Main.module'; 
+import React, { useState, useEffect } from "react";
+import { H2, Formulario, Conteiner,FormComputadores,FormUser} from './Main.module'; 
 
 interface server {
+    
 }
 
 export default function Main(props: server){
+    const [respondido, setRespospondido] = useState(false);
+    useEffect(() => {
+
+		}, []);
     return (
         <Conteiner>
+            { !respondido ?
                 <FormUser>
-                <h2>Formulario do Usuario</h2>
+                <H2>Formulario do Usuario</H2>
+                <span>{respondido}</span>
                 <Formulario action="">
                     <div>                    
                         <label>Nome: </label>
@@ -43,11 +50,11 @@ export default function Main(props: server){
                         <label>Quantos equipamentos serão doados: </label>
                         <input type="number" name="" id="" />
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onClick={ () => setRespospondido(true)}>Enviar</button>
                 </Formulario>
-                </FormUser>
+                </FormUser>:
                 <FormComputadores>
-                    <h3>Formulario de detalhes dos equipamentos</h3>
+                    <H2>Formulario de Detalhes</H2>
                     <Formulario action="">
                         <div>                    
                             <label >Notebook: </label>
@@ -103,9 +110,9 @@ export default function Main(props: server){
                                 <option value="broken">Faltam peças, funciona só as vezes ou está quebrado</option>
                             </select>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" onClick={ () => setRespospondido(false)}>Enviar</button>
                     </Formulario>
-                </FormComputadores>
+                </FormComputadores>}
         </Conteiner>
     )
 }

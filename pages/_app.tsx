@@ -16,7 +16,6 @@
 import type { AppProps } from "next/app";
 import "animate.css"
 import { createGlobalStyle } from "styled-components";
-
 const GlobalStyles = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -58,6 +57,8 @@ footer, header, hgroup, menu, nav, section {
 body,html {
 	display: flex;
 	margin:0px;
+  height: 100vh;
+  width: 100vw;
 	} 
 ol, ul {
 	list-style: none;
@@ -73,6 +74,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+select{
+  width: 100%; 
+  @media (max-width: 614px) {
+    width: 80%;
+    }
 }
 button:hover{
 	cursor: pointer;

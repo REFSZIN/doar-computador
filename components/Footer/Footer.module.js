@@ -6,7 +6,7 @@ export const Conteiner = styled.footer`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-	width: 90%;
+	width: 90vw;
     margin-left: 5%;
 	height: 5vh;
 	justify-content: center;

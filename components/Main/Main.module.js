@@ -6,7 +6,7 @@ export const Conteiner = styled.main`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-	width: 80%;
+	width: 80vw;
 	height: 80vh;
     margin-left:10%;
     margin-top: 20px;
@@ -19,11 +19,14 @@ export const Conteiner = styled.main`
     align-items: center;
     text-align: center;
     color: #A6A6A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: backInDown 1s;
 `;
 
 export const FormComputadores = styled.aside`
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -35,7 +38,7 @@ export const FormComputadores = styled.aside`
     }
 `
 ;export const FormUser = styled.section`
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -45,7 +48,18 @@ export const FormComputadores = styled.aside`
     align-content: space-around;
 `;
 export const Formulario = styled.form`
-    width: 50%;
+    width: 100%;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    background-color: #184eaf;
+`;
+export const H2 = styled.h2`
+    padding-top: 35px;
+    padding-bottom: 35px;
 `;
