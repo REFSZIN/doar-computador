@@ -1,7 +1,28 @@
+/* 	
+//font-family: 'Righteous', cursive;
+//font-family: 'Roboto', sans-serif; 
+//font-family: 'Recursive', sans-serif;
+// build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+// ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+// docs: Documentation only changes
+// feat: A new feature
+// fix: A bug fix
+// perf: A code change that improves performance
+// refactor: A code change that neither fixes a bug nor adds a feature
+// style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+// test: Adding missing tests or correcting existing tests
+*/
+
 import type { AppProps } from "next/app";
+import "animate.css"
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
 *, *:before, *::after{
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -37,7 +58,6 @@ footer, header, hgroup, menu, nav, section {
 body,html {
 	display: flex;
 	margin:0px;
-	background-color: black;
 	} 
 ol, ul {
 	list-style: none;
@@ -62,6 +82,14 @@ button:hover{
 #__next{
 	width: 100vw;
 	height: 100vh;
+}
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
 }
 `;
 
