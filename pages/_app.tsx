@@ -81,6 +81,7 @@ button:hover{
 }
 #__next{
 	width: 100vw;
+  background-color: black;
 	height: 100vh;
 }
 #tsparticles {
@@ -92,7 +93,6 @@ button:hover{
   left: 0;
 }
 `;
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

@@ -10,7 +10,7 @@ export default function Header(props: server){
     return (
         <Conteiner>
                 <Nav>
-                    <H1>DOAR<br/>COMPUTADOR<br/>API {props.data ? "On" : "Off"}</H1>
+                    <H1>DOAR<br/>COMPUTADOR API {props.data ? "On" : "Off"}</H1>
                 </Nav>
         </Conteiner>
     )
