@@ -9,7 +9,7 @@ export default function Footer(props: server){
         <Conteiner>
                 <Nav>
                     <Creditos>©™ Yan - Refszin   
-                        <AppMasters href="https://www.appmasters.io/">App Mastets</AppMasters>
+                        <AppMasters href="https://www.appmasters.io/">App Masters</AppMasters>
                     </Creditos>
                 </Nav>
         </Conteiner>

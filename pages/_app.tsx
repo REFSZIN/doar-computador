@@ -12,7 +12,6 @@
 // style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 // test: Adding missing tests or correcting existing tests
 */
-
 import type { AppProps } from "next/app";
 import "animate.css"
 import { createGlobalStyle } from "styled-components";

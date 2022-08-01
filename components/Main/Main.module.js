@@ -55,7 +55,6 @@ export const Formulario = styled.form`
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
     padding-bottom: 40px;
     background-color: #184eaf;
 `;

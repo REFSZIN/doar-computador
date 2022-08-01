@@ -44,7 +44,7 @@ export default function Main(props: server){
                         </div>
                     <div>
                         <label>Numero: </label>
-                        <input type="street" name="" id="" />
+                        <input type="number" name="" id="" />
                     </div>
                     <div>
                         <label>Quantos equipamentos serão doados: </label>
