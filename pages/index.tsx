@@ -11,7 +11,7 @@ const App: NextPage = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>⚡Doação de Computadores⚡</title>
         </Head>
-        <Conteiner Back={Back} >
+        <Conteiner>
           <Home />
         </Conteiner>
       </div>
